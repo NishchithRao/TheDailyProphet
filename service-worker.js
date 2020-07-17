@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TheDailyProphet/precache-manifest.6b4235d8082d0616bf592465a8b099df.js"
+  "/TheDailyProphet/precache-manifest.40bc801ecbcc25352788f0938767e08e.js"
 );
 
 self.addEventListener('message', (event) => {
