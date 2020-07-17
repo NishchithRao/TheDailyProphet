@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+  font-family: serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d7cebd;
+  padding: 12px;
+  margin:0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.divider,.single_divider {
+	padding: 1px;
+	border: 2px solid #654321;
+	margin: 10px 0;
+	border-left: 0;
+	border-right: 0;
+}
+.single_divider {
+	border-top:0;
+}

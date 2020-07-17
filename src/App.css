@@ -1,0 +1,27 @@
+.footer {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.footer span {
+	font-size: 16px;
+}
+.footer .developer {
+	padding: 10px 0;
+}
+.footer .divider {
+	width:90%;
+	margin: 10px auto;
+}
+.categories {
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+}
+.categories button {
+	margin: 0 5px;
+}
+.categories button:focus {
+	background-color: white;
+	color: #654321;
+}

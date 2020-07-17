@@ -1,0 +1,32 @@
+.header h1 {
+	margin: 12px auto;
+	padding: 8px 16px;
+	border-top: 2px solid black;
+	width: fit-content;
+	text-align: center;
+	border-bottom: 2px solid black;
+	color: #654321;
+	position: relative;
+	font-family: serif;
+}
+.header h1::before {
+	content: "the";
+	position: absolute;
+	font-size: 16px;
+	background-color:#d7cebd;
+	left: 50%;
+	top: -14px;
+	text-transform: uppercase;
+	transform: translateX(-50%);
+	padding: 3px 5px;
+}
+ .header .timeDet {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding:0 16px;
+	 font-family: sans-serif;
+	 font-weight: bold;
+	 color: #654321;
+ }

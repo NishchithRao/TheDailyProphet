@@ -1,0 +1,21 @@
+.smallnews {
+	margin: 8px;
+	margin-left:0;
+	position: relative;
+	overflow: hidden;
+}
+.smallnews .title {
+	font-size: 1em;
+	text-align: left;
+}
+.smallnews p {
+	font-size: 0.7em;
+	width: 100%;
+	text-align: left;
+}
+.smallnews .imgCon {
+	max-width: 100%;
+}
+.smallnews .publisher {
+	font-size: 0.8em;
+}
