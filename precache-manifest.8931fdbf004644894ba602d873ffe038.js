@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68d1104fdb56ea051c97d17d26e2f3c1",
+    "revision": "ee2c5c85f8e4b7012ef69d1ffae317f2",
     "url": "/TheDailyProphet/index.html"
   },
   {
-    "revision": "ca6ea3f028cc7cac79a8",
+    "revision": "70504cc30e7fe253833b",
     "url": "/TheDailyProphet/static/css/main.7ccaa944.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ca6ea3f028cc7cac79a8",
-    "url": "/TheDailyProphet/static/js/main.80365bb7.chunk.js"
+    "revision": "70504cc30e7fe253833b",
+    "url": "/TheDailyProphet/static/js/main.a5c9a691.chunk.js"
   },
   {
     "revision": "9dcc97007a3f5d11b6df",
