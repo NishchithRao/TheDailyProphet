@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TheDailyProphet/static/css/main.7ccaa944.chunk.css",
+    "main.js": "/TheDailyProphet/static/js/main.99faf328.chunk.js",
+    "main.js.map": "/TheDailyProphet/static/js/main.99faf328.chunk.js.map",
+    "runtime-main.js": "/TheDailyProphet/static/js/runtime-main.bd60b383.js",
+    "runtime-main.js.map": "/TheDailyProphet/static/js/runtime-main.bd60b383.js.map",
+    "static/js/2.7d784c2f.chunk.js": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js",
+    "static/js/2.7d784c2f.chunk.js.map": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js.map",
+    "index.html": "/TheDailyProphet/index.html",
+    "precache-manifest.6b4235d8082d0616bf592465a8b099df.js": "/TheDailyProphet/precache-manifest.6b4235d8082d0616bf592465a8b099df.js",
+    "service-worker.js": "/TheDailyProphet/service-worker.js",
+    "static/css/main.7ccaa944.chunk.css.map": "/TheDailyProphet/static/css/main.7ccaa944.chunk.css.map",
+    "static/js/2.7d784c2f.chunk.js.LICENSE.txt": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd60b383.js",
+    "static/js/2.7d784c2f.chunk.js",
+    "static/css/main.7ccaa944.chunk.css",
+    "static/js/main.99faf328.chunk.js"
+  ]
+}
