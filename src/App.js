@@ -4,39 +4,46 @@ import {AllNews,SearchNews} from './helpers/apicalls';
 import Header from './components/Header';
 import TopNews from './components/TopNews';
 import Loader from './components/Loader';
+import {URL} from './helpers/Vars';
 
 function App() {
 	const [data,setData] = useState("");
-	const [query,setQuery] = useState(["entertainment","tech","sport","politics","education","business","crime"]);
-	const [date] = useState(new Date());
+	const [query,setQuery] = useState(["India","entertainment","tech","sport","politics","education","business","crime"]);
+	const [active,setActive] = useState(0);
+	const [loading,setLoading] = useState(false);
+	const [date,setDate] = useState(new Date());
 	useEffect(() => {
-		let triggeredPrompt;
 		HomeData();
 	},[]);
 	const HomeData = () => {
+		setData("");
 		AllNews().then(data =>{
 			localStorage.setItem("date",`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
-                        localStorage.setItem("data",JSON.stringify(data));                                                  setData(data.articles)}).catch(err => setData(JSON.parse(localStorage.getItem("data")).articles));
+                        localStorage.setItem("data",JSON.stringify(data));                                                  setData(data.response.docs)}).catch(err => setData(JSON.parse(localStorage.getItem("data")).response.docs));
 	}
 
 	const SearchData = query => {
+		setData("");
 		SearchNews(query).                                        then(data =>{
-			localStorage.setItem("date",`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);                                                  setData(data.articles)}).                 catch(err => alert(err));
+			localStorage.setItem("date",`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);                                                  setData(data.response.docs)}).                 catch(err => alert(err));
+	}
+	const ToggleBg = position => {
+		active === position ? setActive(0) : setActive(position);
+	}
+	const whiteBg = position => {
+		return active === position ? "#fff" : "#654321";
+	}
+	const colorWhite = position => {
+		return active===position ? "#654321" : "#fff";
 	}
   return (
     <div className="App">
+	  <Header />
+	  <div className="divider"></div>                   <div className="categories">
+                  <button style={{backgroundColor: whiteBg(0),color:colorWhite(0)}} onClick={() => {                          ToggleBg(0);
+                          HomeData();                               }                                                 }>Worldwide</button>                              {                                                         query.map((q,index) => (                                  <button style={{backgroundColor: whiteBg(index+1),color:colorWhite(index+1)}} onClick={() => {                                                                SearchData(q);                                                                                      ToggleBg(index+1);                                                                          }                                                 }>{q}</button>                            ))                                }                                                         </div>
 	  {!data ? <Loader /> : (
 		  <div className="container">
-		  <Header />
-		  <div className="divider"></div>
-		  <div className="categories">
-		  <button onClick={HomeData}>All</button>
-		  {
-			  query.map(q => (
-				  <button onClick={() => SearchData(q)}>{q}</button>
-			  ))
-	  }
-		  </div>
 		  { data.map((item,index) => (
 		  <div className="newsItem">
 			  {index%4==0 ?
