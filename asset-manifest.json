@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TheDailyProphet/static/css/main.7ccaa944.chunk.css",
-    "main.js": "/TheDailyProphet/static/js/main.2c68dcee.chunk.js",
-    "main.js.map": "/TheDailyProphet/static/js/main.2c68dcee.chunk.js.map",
+    "main.js": "/TheDailyProphet/static/js/main.b8daf1b9.chunk.js",
+    "main.js.map": "/TheDailyProphet/static/js/main.b8daf1b9.chunk.js.map",
     "runtime-main.js": "/TheDailyProphet/static/js/runtime-main.bd60b383.js",
     "runtime-main.js.map": "/TheDailyProphet/static/js/runtime-main.bd60b383.js.map",
     "static/js/2.7d784c2f.chunk.js": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js",
     "static/js/2.7d784c2f.chunk.js.map": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js.map",
     "index.html": "/TheDailyProphet/index.html",
-    "precache-manifest.40bc801ecbcc25352788f0938767e08e.js": "/TheDailyProphet/precache-manifest.40bc801ecbcc25352788f0938767e08e.js",
+    "precache-manifest.50fcb699de0285f952f0e6bdb53e1dd0.js": "/TheDailyProphet/precache-manifest.50fcb699de0285f952f0e6bdb53e1dd0.js",
     "service-worker.js": "/TheDailyProphet/service-worker.js",
     "static/css/main.7ccaa944.chunk.css.map": "/TheDailyProphet/static/css/main.7ccaa944.chunk.css.map",
     "static/js/2.7d784c2f.chunk.js.LICENSE.txt": "/TheDailyProphet/static/js/2.7d784c2f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bd60b383.js",
     "static/js/2.7d784c2f.chunk.js",
     "static/css/main.7ccaa944.chunk.css",
-    "static/js/main.2c68dcee.chunk.js"
+    "static/js/main.b8daf1b9.chunk.js"
   ]
 }
