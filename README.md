@@ -1,15 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<<<<<<< HEAD
 ### Get Latest News
 
 get up-to-date news from around the world
 
 ### Browse for topics
+=======
+## Get Latest News
+
+get up-to-date news from around the world
+
+## Browse for topics
+>>>>>>> f2a96edb755be7fa10ea54c4764594c2b28e263b
 
 Tech,entertainment,politics and many more!!
 
 
+>>>>>>> HEAD
 ### Disclaimer
+=======
+## Disclaimer
+>>>>>>> f2a96edb755be7fa10ea54c4764594c2b28e263b
 
 This App is not associated with the Harry Potter Series
 
