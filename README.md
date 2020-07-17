@@ -1,28 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<<<<<<< HEAD
 ### Get Latest News
 
 get up-to-date news from around the world
 
 ### Browse for topics
-=======
-## Get Latest News
-
-get up-to-date news from around the world
-
-## Browse for topics
->>>>>>> f2a96edb755be7fa10ea54c4764594c2b28e263b
-
 Tech,entertainment,politics and many more!!
 
 
->>>>>>> HEAD
-### Disclaimer
-=======
-## Disclaimer
->>>>>>> f2a96edb755be7fa10ea54c4764594c2b28e263b
 
+### Disclaimer
 This App is not associated with the Harry Potter Series
 
 ## Available Scripts
@@ -36,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-i
+
 
 ### `npm run build`
 
