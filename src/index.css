@@ -12,6 +12,7 @@ body {
   background-color: #d7cebd;
   padding: 12px;
   margin:0 auto;
+  background-image: url('./assets/bg.jpg');
 }
 
 code {

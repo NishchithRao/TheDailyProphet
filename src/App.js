@@ -7,6 +7,7 @@ import Loader from "./components/Loader";
 
 function App() {
   const [data, setData] = useState([]);
+  const [fetchTime,setFetchTime] = useState("");
   const query = [
     "India",
     "entertainment",
@@ -22,10 +23,7 @@ function App() {
   const HomeData = () => {
     AllNews()
       .then((data) => {
-        localStorage.setItem(
-          "date",
-          `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
-        );
+        setFetchTime(`${date.getHours()<10 ? '0'+date.getHours(): date.getHours()}:${date.getMinutes()<10 ? '0'+date.getMinutes():date.getMinutes()}:${date.getSeconds()}`);
         localStorage.setItem("data", JSON.stringify(data));
         data.response
           ? setData(data.response.docs)
@@ -69,7 +67,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Header />
+      <Header time={fetchTime} />
       <div className="divider"></div>
       <div className="categories">
         <button
