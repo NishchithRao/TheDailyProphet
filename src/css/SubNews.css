@@ -3,18 +3,20 @@
 	margin-left:0;
 	position: relative;
 	overflow: hidden;
+	width: 100%;
 }
 .smallnews .title {
-	font-size: 1em;
+	font-size: 25px;
 	text-align: left;
 }
 .smallnews p {
-	font-size: 0.7em;
+	font-size: 16px;
+	margin-top: 5px;
 	width: 100%;
-	text-align: left;
+	text-align: justify;
 }
 .smallnews .imgCon {
-	max-width: 100%;
+	width: 300px;
 }
 .smallnews .publisher {
 	font-size: 0.8em;

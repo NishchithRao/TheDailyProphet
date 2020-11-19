@@ -30,3 +30,11 @@
 	 font-weight: bold;
 	 color: #654321;
  }
+@media (min-width:900px) {
+	.header h1 {
+		font-size: 80px;
+	}
+	.header h1::before {
+		font-size: 20px;
+	}
+}

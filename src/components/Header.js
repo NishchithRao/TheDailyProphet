@@ -1,8 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import '../css/Header.css';
 
 const Header = () => {
-	const [date,setDate] = useState(new Date());
+	const date = new Date();
 	return(
 		<div className="header">
 		<h1>DAILY PROPHET</h1>
