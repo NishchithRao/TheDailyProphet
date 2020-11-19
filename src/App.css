@@ -3,7 +3,8 @@
 	font-weight: bold;
 	text-align: center;
 }
-.footer span {
+.footer a {
+	color: #654321;
 	font-size: 16px;
 }
 .footer .developer {
@@ -34,7 +35,8 @@
 }
 .Items .LargeItems {
 	margin-right: 30px;
-	padding-right: 20px;
+	padding-right: 0px;
+	min-width: 60%;
 }
 .mainNews {
 	border-right: none;
@@ -48,6 +50,7 @@
 		margin-right: 0;
 		border-right: none;
 		padding-right: 0;
+		min-width: 100%;
 	}
 	.categories {
 		width: initial;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment} from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "./App.css";
 import { AllNews, SearchNews } from "./helpers/apicalls";
 import Header from "./components/Header";
@@ -27,24 +27,36 @@ function App() {
           `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
         );
         localStorage.setItem("data", JSON.stringify(data));
-        setData(data.response.docs);
+        data.response
+          ? setData(data.response.docs)
+          : setData(JSON.parse(localStorage.getItem("data")));
       })
       .catch((err) =>
-        setData(JSON.parse(localStorage.getItem("data")).response.docs)
+        localStorage.getItem("data")
+          ? setData(JSON.parse(localStorage.getItem("data")).response.docs)
+          : data.response
+          ? setData(JSON.parse(localStorage.getItem("data")).response.docs)
+          : console.log(err)
       );
   };
   useEffect(HomeData, []);
-
   const SearchData = (query) => {
+    setData([]);
     SearchNews(query)
       .then((data) => {
         localStorage.setItem(
           "date",
           `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
         );
-        setData(data.response.docs);
+        data.response
+          ? setData(data.response.docs)
+          : setData(JSON.parse(localStorage.getItem("data")).response.docs);
       })
-      .catch((err) => alert(err));
+      .catch((err) =>
+        localStorage.getItem("data")
+          ? setData(JSON.parse(localStorage.getItem("data")).response.docs)
+          : console.log(err)
+      );
   };
   const ToggleBg = (position) => {
     active === position ? setActive(0) : setActive(position);
@@ -71,7 +83,7 @@ function App() {
         </button>{" "}
         {query.map((q, index) => (
           <button
-		  key={index}
+            key={index}
             style={{
               backgroundColor: whiteBg(index + 1),
               color: colorWhite(index + 1),
@@ -122,10 +134,15 @@ function App() {
             </div>
           </div>
           <div className="footer">
+            <div className="single_divider"></div>
             <div className="developer">
               Designed and Developed by{" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dev_monk_4/">
-                <span>Nishchith Rao</span>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/dev_monk_4/"
+              >
+                Nishchith Rao
               </a>
             </div>
           </div>
